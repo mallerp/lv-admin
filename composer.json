@@ -1,0 +1,41 @@
+{
+  "name": "mallerp/lv-admin",
+  "description": "开箱即用的Hyperf后台扩展，laravel-admin用法",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "毛自豪",
+      "email": "4213509@qq.com"
+    }
+  ],
+  "homepage": "https://github.com/mallerp/lv-admin",
+  "keywords": [
+    "hyperf",
+    "Admin",
+    "Vue"
+  ],
+  "require": {
+    "php": ">=7.3",
+    "hyperf/model-cache": "^2.0.0",
+    "hyperf/redis": "^2.0.0",
+    "hyperf-plus/route": "~2.1.0|dev-master",
+    "96qbhy/hyperf-auth": "^2.3",
+    "hyperf-plus/ui": "~1.0.0|dev-master",
+    "hyperf/paginator": "~2.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "HPlus\\Admin\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "HPlus\\Admin\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "hyperf": {
+      "config": "\\HPlus\\Admin\\ConfigProvider"
+    }
+  }
+}
